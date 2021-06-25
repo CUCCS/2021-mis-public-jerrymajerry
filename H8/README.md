@@ -12,7 +12,6 @@
   - 版本信息
 
     - python 2.7.18
-
     - pip 20.3.4 
     - pipenv, version 2021.5.29
     - drover2.4.4
@@ -22,7 +21,6 @@
 * 详细记录实验环境搭建过程；
 * 至少完成以下 [实验](https://github.com/c4pr1c3/Android-InsecureBankv2/tree/master/Walkthroughs) ：
   - [x] Developer Backdoor
-
   - [x] Insecure Logging
   - [x] Android Application patching + Weak Auth
   - [x] Exploiting Android Broadcast Receivers
@@ -414,7 +412,7 @@ sh d2j-dex2jar.sh classes.dex
 
    ![](images/报错3-signapk签名失败.png)
 
-   改用在https://github.com/appium-boneyard/sign下载的**sign1.0.jar**重新对apk签名，得到InsecureBankv2.s.apk，但是无法通过adb install安装到模拟器
+   改用在 https://github.com/appium-boneyard/sign 下载的**sign1.0.jar**重新对apk签名，得到InsecureBankv2.s.apk，但是无法通过adb install安装到模拟器
 
 - 解决
   - 看了github上相关的issues有同样的问题，估计是signapk年久失修了，改用评价不错的**apksigner**，成功
